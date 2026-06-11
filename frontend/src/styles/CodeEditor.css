@@ -1,0 +1,62 @@
+.code-editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.language-label {
+  color: #888;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+.copy-button:active {
+  transform: translateY(0);
+}
+
+.monaco-editor {
+  flex: 1 !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+/* Monaco Editor Dark Theme Customization */
+.monaco-editor .monaco-editor-background {
+  background: #1e1e1e;
+}
+
+.monaco-editor .line-numbers {
+  background: #1e1e1e;
+  color: #666;
+}

@@ -1,0 +1,58 @@
+.code-preview {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.preview-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.validation-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.validation-status.valid {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.validation-status.invalid {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+}
+
+.validation-status .icon {
+  display: flex;
+  align-items: center;
+}
+
+.validation-status .icon.valid {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
